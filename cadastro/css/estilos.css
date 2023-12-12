@@ -1,0 +1,45 @@
+#lista-registros{display: none;}
+
+#cadastro-registros {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
+body[page=lista] #lista-registros {
+    display: block;
+}
+
+body[page=cadastro] #cadastro-registros { display: flex;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table, td{
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(red, green, blue);
+    color: #fff;
+    margin: 3px;
+    padding: 10px 15px;
+}
+button:hover{
+    opacity: 0.8;
+}
+button.cinza{
+    background-color: #ccc;
+    color: #fff;
+}
+button.vermelho {
+    background-color: black;
+    color: #fff;
+}
